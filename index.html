@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -78,11 +78,11 @@
         <nav class="hidden md:flex items-center gap-8 text-sm text-slate-400">
           <a href="#features" class="hover:text-white transition-colors">Features</a>
           <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
-          <a href="#about" class="hover:text-white transition-colors">About</a>
+          <a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a>
         </nav>
-        <button class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white/90 hover:bg-white/10 hover:border-white/20 transition-all">
+        <a href="#pricing" class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white/90 hover:bg-white/10 hover:border-white/20 transition-all">
           Sign in
-        </button>
+        </a>
       </div>
     </header>
 
@@ -110,15 +110,15 @@
           </p>
 
           <div class="mt-10 flex flex-wrap items-center gap-4">
-            <button class="btn-gradient inline-flex items-center justify-center rounded-full px-8 py-3.5 text-sm font-semibold text-white transition-all duration-200">
+            <a href="#pricing" class="btn-gradient inline-flex items-center justify-center rounded-full px-8 py-3.5 text-sm font-semibold text-white transition-all duration-200">
               Start for Free
-            </button>
-            <button class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-8 py-3.5 text-sm font-medium text-white/90 hover:bg-white/10 hover:border-white/25 transition-all">
+            </a>
+            <a href="#testimonials" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-8 py-3.5 text-sm font-medium text-white/90 hover:bg-white/10 hover:border-white/25 transition-all">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M8 5v14l11-7z"/>
               </svg>
               Watch Demo
-            </button>
+            </a>
           </div>
 
           <div class="mt-12 flex items-center gap-6 text-sm text-slate-500">
@@ -162,7 +162,7 @@
       </section>
     </main>
     <!-- INSERT_YOUR_CODE -->
-    <section class="w-full px-4 py-20" style="background: var(--zenith-bg);">
+    <section id="features" class="w-full px-4 py-20" style="background: var(--zenith-bg);">
       <div class="mx-auto max-w-6xl">
         <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12 drop-shadow-[0_0_18px_rgba(168,85,247,0.45)]">
           Why choose <span class="text-purple-400">Zenith AI?</span>
@@ -212,7 +212,7 @@
         </div>
       </div>
     </section>
-    <section class="w-full px-4 py-20" style="background: var(--zenith-bg);">
+    <section id="testimonials" class="w-full px-4 py-20" style="background: var(--zenith-bg);">
       <div class="mx-auto max-w-4xl">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white drop-shadow-[0_0_20px_rgba(16,185,129,0.55)]" style="text-shadow: 0 0 16px #06d6a0;">
           Trusted by Top Law Firms
@@ -256,23 +256,185 @@
         </div>
       </div>
     </section>
+    <section id="pricing" class="w-full px-4 py-20" style="background: var(--zenith-bg);">
+      <div class="mx-auto max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white drop-shadow-[0_0_20px_rgba(16,185,129,0.65)]" style="text-shadow: 0 0 16px #06d6a0;">
+          Simple, <span class="text-emerald-400">Transparent</span> Pricing
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <!-- Starter Plan -->
+          <div class="flex flex-col rounded-2xl border border-white/15 bg-white/[0.08] backdrop-blur-md p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-[0_0_32px_4px_rgba(16,185,129,0.22)] duration-200">
+            <span class="text-lg font-semibold text-white mb-1">Starter</span>
+            <div class="text-4xl font-bold text-white mb-4">$49<span class="text-base font-medium text-slate-400">/mo</span></div>
+            <ul class="text-left text-slate-300 space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                Up to 3 Users
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                Document Review AI
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                Email Support
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                Secure, Encrypted Storage
+              </li>
+            </ul>
+            <a href="#pricing" class="w-full btn-gradient rounded-xl py-3 px-6 font-semibold text-white shadow-md transition hover:-translate-y-1 hover:shadow-lg block text-center">
+              Get Started
+            </a>
+          </div>
 
-    <!-- Footer -->
-    <footer class="border-t border-white/5">
-      <div class="mx-auto max-w-6xl px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-        <span>© <span id="year"></span> Zenith AI. All rights reserved.</span>
-        <div class="flex gap-6">
-          <a href="#" class="hover:text-slate-300 transition">Privacy</a>
-          <a href="#" class="hover:text-slate-300 transition">Terms</a>
-          <a href="#" class="hover:text-slate-300 transition">Contact</a>
+          <!-- Professional Plan (highlighted) -->
+          <div class="relative flex flex-col rounded-2xl border-2 border-emerald-400 bg-white/[0.12] backdrop-blur-2xl p-8 shadow-xl z-10 transition hover:-translate-y-2 hover:shadow-[0_0_44px_8px_rgba(16,185,129,0.36)] duration-200
+          ">
+            <!-- Most Popular Badge -->
+            <span class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-emerald-500 text-white text-xs font-semibold px-4 py-1.5 rounded-full shadow-lg tracking-wide border border-emerald-300 select-none">
+              Most Popular
+            </span>
+            <span class="text-lg font-semibold text-white mb-1 mt-4 md:mt-0">Professional</span>
+            <div class="text-4xl font-bold text-white mb-4">$99<span class="text-base font-medium text-slate-400">/mo</span></div>
+            <ul class="text-left text-slate-200 space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                Up to 15 Users
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                Priority AI Processing
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                Advanced Collaboration Tools
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                Integrations (Slack, DocuSign)
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                Live Chat Support
+              </li>
+            </ul>
+            <a href="#pricing" class="w-full btn-gradient rounded-xl py-3 px-6 font-semibold text-white shadow-md transition hover:-translate-y-1 hover:shadow-lg block text-center">
+              Get Started
+            </a>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div class="flex flex-col rounded-2xl border border-white/15 bg-white/[0.08] backdrop-blur-md p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-[0_0_32px_4px_rgba(16,185,129,0.22)] duration-200">
+            <span class="text-lg font-semibold text-white mb-1">Enterprise</span>
+            <div class="text-4xl font-bold text-white mb-4">Custom</div>
+            <ul class="text-left text-slate-300 space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                Unlimited Users
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                Dedicated AI Models
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                White-Glove Onboarding
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 0-1.414z"></path></svg>
+                Dedicated Account Manager
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 6.293a1 1 0 00-1.414 0L9 12.586l-2.293-2.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"></path></svg>
+                24/7 Priority Support
+              </li>
+            </ul>
+            <a href="#pricing" class="w-full btn-gradient rounded-xl py-3 px-6 font-semibold text-white shadow-md transition hover:-translate-y-1 hover:shadow-lg block text-center">
+              Contact Sales
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer: NexusLegal -->
+    <footer class="bg-[#0a0a0a] border-t border-emerald-900/30">
+      <div class="mx-auto max-w-6xl px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+          <!-- Brand -->
+          <div>
+            <span class="block text-2xl font-extrabold mb-2 bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-600 bg-clip-text text-transparent">
+              NexusLegal
+            </span>
+            <span class="text-gray-400 text-sm">
+              Empowering legal professionals with cutting-edge AI.
+            </span>
+          </div>
+          <!-- Product Links -->
+          <div>
+            <h4 class="text-white font-semibold mb-3 text-sm tracking-wide">Product</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#features" class="text-gray-400 text-sm hover:text-emerald-400 transition">Features</a>
+              </li>
+              <li>
+                <a href="#pricing" class="text-gray-400 text-sm hover:text-emerald-400 transition">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Integrations</a>
+              </li>
+              <li>
+                <a href="#testimonials" class="text-gray-400 text-sm hover:text-emerald-400 transition">Demo</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Company Links -->
+          <div>
+            <h4 class="text-white font-semibold mb-3 text-sm tracking-wide">Company</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Legal Links -->
+          <div>
+            <h4 class="text-white font-semibold mb-3 text-sm tracking-wide">Legal</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Terms of Service</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Compliance</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Bottom copyright -->
+        <div class="mt-10 border-t border-white/10 pt-6">
+          <p class="text-center text-xs text-gray-500">
+            © 2026 NexusLegal. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
-  </div>
 
   <script>
     // Auto-set current year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
+    // document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
