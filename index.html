@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenith AI — Master Your Time with AI-Driven Precision</title>
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --zenith-bg: #0a0a0a;
+      --zenith-purple: #a855f7;
+      --zenith-purple-bright: #c084fc;
+      --zenith-purple-glow: #7c3aed;
+    }
+
+    body { background: var(--zenith-bg); }
+
+    /* Glassmorphism navbar */
+    .glass-nav {
+      background: rgba(10, 10, 10, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    /* Primary gradient button */
+    .btn-gradient {
+      background: linear-gradient(135deg, #a855f7 0%, #7c3aed 50%, #6d28d9 100%);
+      box-shadow: 0 0 24px rgba(168, 85, 247, 0.35);
+    }
+    .btn-gradient:hover {
+      background: linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #8b5cf6 100%);
+      box-shadow: 0 0 32px rgba(168, 85, 247, 0.5);
+      transform: translateY(-1px);
+    }
+
+    /* Purple glow orbs */
+    .glow-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="text-slate-100 antialiased">
+  <!-- Ambient background glow -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <div class="glow-orb bg-purple-500/40 -top-40 -right-40 w-96 h-96"></div>
+    <div class="glow-orb bg-violet-600/30 top-1/2 -left-32 w-80 h-80"></div>
+  </div>
+
+  <div class="relative min-h-screen flex flex-col">
+    <!-- Glassmorphism Navbar -->
+    <header class="glass-nav fixed top-0 left-0 right-0 z-50">
+      <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-purple-500 to-violet-700 flex items-center justify-center shadow-lg shadow-purple-500/20">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <span class="text-xl font-semibold tracking-tight text-white">Zenith AI</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8 text-sm text-slate-400">
+          <a href="#features" class="hover:text-white transition-colors">Features</a>
+          <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+          <a href="#about" class="hover:text-white transition-colors">About</a>
+        </nav>
+        <button class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white/90 hover:bg-white/10 hover:border-white/20 transition-all">
+          Sign in
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-1 pt-32 pb-24 lg:pt-40 lg:pb-32">
+      <section class="mx-auto max-w-6xl px-6">
+        <div class="max-w-3xl">
+          <p class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm px-4 py-1.5 text-xs font-medium text-slate-300 mb-8">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+            </span>
+            Powered by frontier AI
+          </p>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.1]">
+            Master Your Time with
+            <span class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-400 to-fuchsia-400">
+              AI-Driven Precision
+            </span>
+          </h1>
+
+          <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed">
+            The first task manager that thinks like a founder. Automate your workflow, eliminate distractions, and scale your vision.
+          </p>
+
+          <div class="mt-10 flex flex-wrap items-center gap-4">
+            <button class="btn-gradient inline-flex items-center justify-center rounded-full px-8 py-3.5 text-sm font-semibold text-white transition-all duration-200">
+              Start for Free
+            </button>
+            <button class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-8 py-3.5 text-sm font-medium text-white/90 hover:bg-white/10 hover:border-white/25 transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+              Watch Demo
+            </button>
+          </div>
+
+          <div class="mt-12 flex items-center gap-6 text-sm text-slate-500">
+            <span class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              No credit card required
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Setup in 2 minutes
+            </span>
+          </div>
+        </div>
+
+        <!-- Hero visual / product preview area -->
+        <div class="mt-20 lg:mt-28 relative">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent z-10 pointer-events-none"></div>
+          <div class="relative rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm p-1 shadow-2xl shadow-purple-500/5">
+            <div class="flex items-center gap-2 px-4 py-3 border-b border-white/5">
+              <span class="h-2.5 w-2.5 rounded-full bg-purple-500/80"></span>
+              <span class="h-2.5 w-2.5 rounded-full bg-violet-500/60"></span>
+              <span class="h-2.5 w-2.5 rounded-full bg-fuchsia-500/60"></span>
+              <span class="ml-4 text-xs text-slate-500 font-medium">Zenith AI • Workspace</span>
+            </div>
+            <div class="aspect-video rounded-b-xl bg-gradient-to-br from-white/[0.04] to-transparent flex items-center justify-center min-h-[280px]">
+              <div class="flex flex-col items-center gap-4 text-slate-500">
+                <div class="h-12 w-12 rounded-xl border border-white/10 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-purple-500/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                  </svg>
+                </div>
+                <span class="text-sm">Product interface placeholder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5">
+      <div class="mx-auto max-w-6xl px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <span>© <span id="year"></span> Zenith AI. All rights reserved.</span>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-slate-300 transition">Privacy</a>
+          <a href="#" class="hover:text-slate-300 transition">Terms</a>
+          <a href="#" class="hover:text-slate-300 transition">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Auto-set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
