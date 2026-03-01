@@ -66,8 +66,8 @@
     <!-- Hero Section -->
     <main class="flex-1 pt-32 pb-24 lg:pt-40 lg:pb-32">
       <section class="mx-auto max-w-6xl px-6">
-        <div class="max-w-3xl">
-          <p class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm px-4 py-1.5 text-xs font-medium text-slate-300 mb-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <p class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm px-4 py-1.5 text-xs font-medium text-slate-300 mb-8 mx-auto">
             <span class="relative flex h-2 w-2">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -82,11 +82,11 @@
             </span>
           </h1>
 
-          <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed">
+          <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed mx-auto">
             Streamline your legal work. Harness cutting-edge AI to analyze, organize, and review documents efficiently—so your team focuses on what truly matters.
           </p>
 
-          <div class="mt-10 flex flex-wrap items-center gap-4">
+          <div class="mt-10 flex flex-wrap items-center gap-4 justify-center">
             <a href="register.html" class="inline-flex items-center justify-center rounded-full px-8 py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-emerald-500 to-teal-500 shadow-lg transition-all duration-200 hover:from-emerald-400 hover:to-teal-400 hover:shadow-emerald-400/30">
               Start for Free
             </a>
@@ -98,7 +98,7 @@
             </a>
           </div>
 
-          <div class="mt-12 flex items-center gap-6 text-sm text-slate-500">
+          <div class="mt-12 flex items-center gap-6 text-sm text-slate-500 justify-center">
             <span class="flex items-center gap-2">
               <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
@@ -115,23 +115,107 @@
         </div>
 
         <!-- Hero visual / product preview area -->
-        <div class="mt-20 lg:mt-28 relative">
+        <div class="mt-20 lg:mt-28 relative mx-auto w-full max-w-5xl">
           <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent z-10 pointer-events-none"></div>
           <div class="relative rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm p-1 shadow-2xl shadow-emerald-500/10">
+            <!-- Glass window’s top bar -->
             <div class="flex items-center gap-2 px-4 py-3 border-b border-white/5">
               <span class="h-2.5 w-2.5 rounded-full bg-emerald-500/80"></span>
               <span class="h-2.5 w-2.5 rounded-full bg-teal-500/60"></span>
               <span class="h-2.5 w-2.5 rounded-full bg-emerald-400/60"></span>
               <span class="ml-4 text-xs text-slate-500 font-medium">NexusLegal • Workspace</span>
             </div>
-            <div class="aspect-video rounded-b-xl bg-gradient-to-br from-white/[0.04] to-transparent flex items-center justify-center min-h-[280px]">
-              <div class="flex flex-col items-center gap-4 text-slate-500">
-                <div class="h-12 w-12 rounded-xl border border-white/10 flex items-center justify-center">
-                  <svg class="w-6 h-6 text-emerald-500/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                  </svg>
+            <!-- Mock product UI content -->
+            <div class="aspect-video rounded-b-xl bg-gradient-to-br from-white/[0.04] to-transparent flex items-stretch min-h-[280px] px-0 sm:px-6 py-4 sm:py-7">
+              <div class="flex flex-col w-full">
+                <!-- Top Document Bar (fake doc name + status badge) -->
+                <div class="flex items-center justify-between px-4 sm:px-0 mb-5">
+                  <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-emerald-300/90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <rect x="4" y="2" width="16" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M8 6h8M8 10h8M8 14h4" stroke="currentColor" stroke-width="1.2"/>
+                    </svg>
+                    <span class="font-medium text-sm text-white tracking-tight">Acme_Merger_Agreement.pdf</span>
+                  </div>
+                  <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/40 text-emerald-400 text-xs font-semibold">
+                    <svg class="h-2.5 w-2.5 mr-1 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10"/></svg>
+                    AI Status: <span class="ml-1">Analyzed</span>
+                  </span>
                 </div>
-                <span class="text-sm">Product interface placeholder</span>
+                <!-- Main product UI area -->
+                <div class="flex flex-1 flex-col sm:flex-row gap-6 sm:gap-6 px-4 sm:px-0 overflow-y-auto">
+                  <!-- Left: Document skeleton and AI tooltip -->
+                  <div class="flex-1">
+                    <div class="space-y-3 w-full max-w-2xl mx-auto mt-1">
+                      <!-- skeleton lines -->
+                      <div class="h-4 bg-white/10 rounded w-2/3"></div>
+                      <div class="h-4 bg-white/10 rounded w-5/6"></div>
+                      <div class="h-4 bg-white/10 rounded w-3/4"></div>
+                      <div class="h-4 bg-white/10 rounded w-4/6"></div>
+
+                      <!-- Highlighted clause with floating tooltip -->
+                      <div class="relative mt-5">
+                        <div class="rounded-xl border border-emerald-500/40 bg-emerald-500/20 p-4 pt-5 pb-4 shadow-inner">
+                          <div class="h-4 bg-white/15 rounded w-11/12 mb-2"></div>
+                          <div class="h-4 bg-white/15 rounded w-5/6"></div>
+                        </div>
+                        <!-- Floating tooltip (absolute-pos) -->
+                        <div class="absolute -top-5 left-5">
+                          <div class="flex items-center gap-1 px-2 py-1 rounded-full bg-white/80 border border-emerald-400 text-emerald-700 text-xs font-medium shadow-lg shadow-emerald-400/10"
+                               style="backdrop-filter: blur(4px);">
+                            <svg class="w-4 h-4 mr-1 text-emerald-400 inline" fill="none" stroke="currentColor" stroke-width="2"
+                                 viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Key Clause Verified
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="h-4 bg-white/10 rounded w-[90%] mt-6"></div>
+                      <div class="h-4 bg-white/10 rounded w-5/6"></div>
+                      <div class="h-4 bg-white/10 rounded w-4/6"></div>
+                      <div class="h-4 bg-white/10 rounded w-3/5"></div>
+                      <div class="h-4 bg-white/10 rounded w-5/6"></div>
+                    </div>
+                  </div>
+                  <!-- Right: Insights sidebar, only on sm+ screens -->
+                  <aside class="hidden sm:flex flex-col w-64 ml-2 shrink-0 h-full">
+                    <div class="rounded-xl border border-emerald-400/30 bg-emerald-950/70 backdrop-blur-md shadow-lg p-5 flex flex-col gap-5 mt-1">
+                      <span class="font-semibold text-base text-white mb-1 flex items-center gap-2">
+                        <svg class="w-4 h-4 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                        AI Insights
+                      </span>
+                      <div class="space-y-3">
+                        <div class="flex items-center gap-2">
+                          <span class="inline-block h-2.5 w-2.5 rounded-full bg-red-500"></span>
+                          <span class="text-sm text-red-400 font-semibold">1 Risk Detected</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <span class="inline-block h-2.5 w-2.5 rounded-full bg-yellow-400"></span>
+                          <span class="text-sm text-yellow-200 font-semibold">3 Deviations</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-400"></span>
+                          <span class="text-sm text-emerald-200 font-semibold">7 Compliant Clauses</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <span class="inline-block h-2.5 w-2.5 rounded-full bg-sky-400"></span>
+                          <span class="text-sm text-sky-200 font-semibold">98% Analyzed</span>
+                        </div>
+                      </div>
+                      <div class="mt-5">
+                        <div class="text-xs text-slate-400">
+                          Analysis completed <span class="text-emerald-400">seconds ago</span>.<br/>
+                          <span class="italic">AI review: v5.2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
               </div>
             </div>
           </div>
@@ -192,44 +276,46 @@
     <section id="testimonials" class="w-full px-4 py-20" style="background: var(--nexuslegal-bg);">
       <div class="mx-auto max-w-4xl">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white drop-shadow-[0_0_20px_rgba(16,185,129,0.55)]" style="text-shadow: 0 0 16px #06d6a0;">
-          Trusted by Top Law Firms
+          The Legal AI Revolution
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <!-- Testimonial 1 -->
+
+          <!-- Insight Card 1 -->
           <div class="flex flex-col items-center text-center rounded-2xl border border-white/15 bg-white/[0.08] backdrop-blur-md p-8 shadow-lg group transition hover:-translate-y-2 hover:shadow-[0_0_32px_4px_rgba(16,185,129,0.32)] duration-200">
-            <img src="https://ui-avatars.com/api/?name=Sarah+Ellis&background=10b981&color=fff&size=96" alt="Avatar of Sarah Ellis" class="w-16 h-16 rounded-full mb-4 border-2 border-emerald-400 shadow-lg">
-            <!-- Stars -->
-            <div class="flex justify-center mb-4">
-              <svg class="w-6 h-6 text-emerald-400" fill="#facc15" viewBox="0 0 20 20"><polygon points="10,2.5 12.59,7.43 18,8.34 14,12.17 15,17.5 10,14.5 5,17.5 6,12.17 2,8.34 7.41,7.43"></polygon></svg>
-              <svg class="w-6 h-6 text-emerald-400" fill="#facc15" viewBox="0 0 20 20"><polygon points="10,2.5 12.59,7.43 18,8.34 14,12.17 15,17.5 10,14.5 5,17.5 6,12.17 2,8.34 7.41,7.43"></polygon></svg>
-              <svg class="w-6 h-6 text-emerald-400" fill="#facc15" viewBox="0 0 20 20"><polygon points="10,2.5 12.59,7.43 18,8.34 14,12.17 15,17.5 10,14.5 5,17.5 6,12.17 2,8.34 7.41,7.43"></polygon></svg>
-              <svg class="w-6 h-6 text-emerald-400" fill="#facc15" viewBox="0 0 20 20"><polygon points="10,2.5 12.59,7.43 18,8.34 14,12.17 15,17.5 10,14.5 5,17.5 6,12.17 2,8.34 7.41,7.43"></polygon></svg>
-              <svg class="w-6 h-6 text-emerald-400" fill="#facc15" viewBox="0 0 20 20"><polygon points="10,2.5 12.59,7.43 18,8.34 14,12.17 15,17.5 10,14.5 5,17.5 6,12.17 2,8.34 7.41,7.43"></polygon></svg>
+            <div class="w-16 h-16 rounded-full mb-4 flex items-center justify-center bg-gradient-to-br from-emerald-400 via-emerald-500 to-teal-500/80 shadow-lg drop-shadow-[0_0_16px_rgba(16,185,129,0.55)]">
+              <!-- Chart/Data SVG Icon -->
+              <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 32 32">
+                <rect x="5" y="11" width="4" height="16" rx="1.7" fill="currentColor" class="text-emerald-300" />
+                <rect x="12" y="5" width="4" height="22" rx="1.7" fill="currentColor" class="text-emerald-400" />
+                <rect x="19" y="15" width="4" height="12" rx="1.7" fill="currentColor" class="text-emerald-500" />
+                <rect x="26" y="19" width="4" height="8" rx="1.7" fill="currentColor" class="text-teal-400" />
+              </svg>
             </div>
             <p class="text-slate-200 mb-4 italic">
-              “NexusLegal has completely transformed our workflow. We now spend a fraction of the time reviewing documents—allowing us to focus on our clients rather than paperwork. An invaluable tool for forward-thinking law firms.”
+              “Generative AI could automate up to 44% of legal tasks in the US, dramatically reducing the time spent on contract analysis and document review.”
             </p>
-            <span class="mt-2 font-semibold text-emerald-400">Sarah Ellis</span>
-            <span class="text-xs text-slate-400">Senior Partner, Bell & Carr LLP</span>
+            <span class="mt-2 font-semibold text-emerald-400">Goldman Sachs</span>
+            <span class="text-xs text-slate-400">Global Economics Report (2023)</span>
           </div>
 
-          <!-- Testimonial 2 -->
+          <!-- Insight Card 2 -->
           <div class="flex flex-col items-center text-center rounded-2xl border border-white/15 bg-white/[0.08] backdrop-blur-md p-8 shadow-lg group transition hover:-translate-y-2 hover:shadow-[0_0_32px_4px_rgba(16,185,129,0.32)] duration-200">
-            <img src="https://ui-avatars.com/api/?name=Jonathan+Miles&background=10b981&color=fff&size=96" alt="Avatar of Jonathan Miles" class="w-16 h-16 rounded-full mb-4 border-2 border-emerald-400 shadow-lg">
-            <!-- Stars -->
-            <div class="flex justify-center mb-4">
-              <svg class="w-6 h-6 text-emerald-400" fill="#facc15" viewBox="0 0 20 20"><polygon points="10,2.5 12.59,7.43 18,8.34 14,12.17 15,17.5 10,14.5 5,17.5 6,12.17 2,8.34 7.41,7.43"></polygon></svg>
-              <svg class="w-6 h-6 text-emerald-400" fill="#facc15" viewBox="0 0 20 20"><polygon points="10,2.5 12.59,7.43 18,8.34 14,12.17 15,17.5 10,14.5 5,17.5 6,12.17 2,8.34 7.41,7.43"></polygon></svg>
-              <svg class="w-6 h-6 text-emerald-400" fill="#facc15" viewBox="0 0 20 20"><polygon points="10,2.5 12.59,7.43 18,8.34 14,12.17 15,17.5 10,14.5 5,17.5 6,12.17 2,8.34 7.41,7.43"></polygon></svg>
-              <svg class="w-6 h-6 text-emerald-400" fill="#facc15" viewBox="0 0 20 20"><polygon points="10,2.5 12.59,7.43 18,8.34 14,12.17 15,17.5 10,14.5 5,17.5 6,12.17 2,8.34 7.41,7.43"></polygon></svg>
-              <svg class="w-6 h-6 text-emerald-400" fill="#facc15" viewBox="0 0 20 20"><polygon points="10,2.5 12.59,7.43 18,8.34 14,12.17 15,17.5 10,14.5 5,17.5 6,12.17 2,8.34 7.41,7.43"></polygon></svg>
+            <div class="w-16 h-16 rounded-full mb-4 flex items-center justify-center bg-gradient-to-br from-emerald-400 via-emerald-500 to-teal-500/80 shadow-lg drop-shadow-[0_0_16px_rgba(16,185,129,0.55)]">
+              <!-- AI Technology SVG Icon -->
+              <svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="12" fill="#10b981" class="drop-shadow-[0_0_8px_rgba(16,185,129,0.3)]" />
+                <path d="M12.5 20A7.5 7.5 0 1 1 20 27.5M27.5 20A7.5 7.5 0 0 1 20 12.5" stroke="#54f8c6" stroke-width="2.3" stroke-linecap="round"/>
+                <rect x="17.5" y="17.5" width="5" height="5" rx="2" fill="white" stroke="#06d6a0" stroke-width="1.2"/>
+                <path d="M20 8v2.5M20 29.5V32M8 20h2.5M29.5 20H32" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+              </svg>
             </div>
             <p class="text-slate-200 mb-4 italic">
-              “Before NexusLegal, document review used to take up entire days. Now, our team completes reviews in record time with absolute confidence in accuracy. We can’t imagine returning to our old process.”
+              “By 2026, 50% of white-collar workers will routinely interact with generative AI, making AI-assisted document review a standard competitive requirement for law firms.”
             </p>
-            <span class="mt-2 font-semibold text-emerald-400">Jonathan Miles</span>
-            <span class="text-xs text-slate-400">Managing Attorney, Crestview Legal Group</span>
+            <span class="mt-2 font-semibold text-emerald-400">Gartner</span>
+            <span class="text-xs text-slate-400">Emerging Tech Impact Report</span>
           </div>
+
         </div>
       </div>
     </section>
@@ -403,7 +489,7 @@
         <!-- Bottom copyright -->
         <div class="mt-10 border-t border-white/10 pt-6">
           <p class="text-center text-xs text-gray-500">
-            © 2026 NexusLegal. All rights reserved.
+            © <span id="year"></span> NexusLegal. All rights reserved.
           </p>
         </div>
       </div>
@@ -411,7 +497,8 @@
 
   <script>
     // Auto-set current year in footer
-    // document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
