@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zenith AI — Master Your Time with AI-Driven Precision</title>
+  <title>NexusLegal — AI-Powered Document Analysis for Law Firms</title>
 
   <!-- Inter font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,13 +19,10 @@
   <style>
     :root {
       font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --zenith-bg: #0a0a0a;
-      --zenith-purple: #a855f7;
-      --zenith-purple-bright: #c084fc;
-      --zenith-purple-glow: #7c3aed;
+      --nexuslegal-bg: #0a0a0a;
     }
 
-    body { background: var(--zenith-bg); }
+    body { background: var(--nexuslegal-bg); }
 
     /* Glassmorphism navbar */
     .glass-nav {
@@ -34,33 +31,13 @@
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
-
-    /* Primary gradient button */
-    .btn-gradient {
-      background: linear-gradient(135deg, #a855f7 0%, #7c3aed 50%, #6d28d9 100%);
-      box-shadow: 0 0 24px rgba(168, 85, 247, 0.35);
-    }
-    .btn-gradient:hover {
-      background: linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #8b5cf6 100%);
-      box-shadow: 0 0 32px rgba(168, 85, 247, 0.5);
-      transform: translateY(-1px);
-    }
-
-    /* Purple glow orbs */
-    .glow-orb {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(80px);
-      opacity: 0.4;
-      pointer-events: none;
-    }
   </style>
 </head>
 <body class="text-slate-100 antialiased">
-  <!-- Ambient background glow -->
+  <!-- Emerald/Teal ambient background glow -->
   <div class="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-    <div class="glow-orb bg-purple-500/40 -top-40 -right-40 w-96 h-96"></div>
-    <div class="glow-orb bg-violet-600/30 top-1/2 -left-32 w-80 h-80"></div>
+    <div class="absolute bg-emerald-500/40 -top-40 -right-40 w-96 h-96 rounded-full blur-3xl opacity-30"></div>
+    <div class="absolute bg-teal-500/30 top-1/2 -left-32 w-80 h-80 rounded-full blur-3xl opacity-30"></div>
   </div>
 
   <div class="relative min-h-screen flex flex-col">
@@ -68,12 +45,12 @@
     <header class="glass-nav fixed top-0 left-0 right-0 z-50">
       <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
         <div class="flex items-center gap-3">
-          <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-purple-500 to-violet-700 flex items-center justify-center shadow-lg shadow-purple-500/20">
+          <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-lg shadow-emerald-500/20">
             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
             </svg>
           </div>
-          <span class="text-xl font-semibold tracking-tight text-white">Zenith AI</span>
+          <span class="text-xl font-semibold tracking-tight text-white">NexusLegal</span>
         </div>
         <nav class="hidden md:flex items-center gap-8 text-sm text-slate-400">
           <a href="#features" class="hover:text-white transition-colors">Features</a>
@@ -92,25 +69,25 @@
         <div class="max-w-3xl">
           <p class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm px-4 py-1.5 text-xs font-medium text-slate-300 mb-8">
             <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
             Powered by frontier AI
           </p>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.1]">
-            Master Your Time with
-            <span class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-400 to-fuchsia-400">
-              AI-Driven Precision
+            AI-Powered Document <span class="block sm:inline">Analysis for Law Firms</span>
+            <span class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-emerald-600">
+              Built for Lawyers, By Lawyers
             </span>
           </h1>
 
           <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed">
-            The first task manager that thinks like a founder. Automate your workflow, eliminate distractions, and scale your vision.
+            Streamline your legal work. Harness cutting-edge AI to analyze, organize, and review documents efficiently—so your team focuses on what truly matters.
           </p>
 
           <div class="mt-10 flex flex-wrap items-center gap-4">
-            <a href="register.html" class="btn-gradient inline-flex items-center justify-center rounded-full px-8 py-3.5 text-sm font-semibold text-white transition-all duration-200">
+            <a href="register.html" class="inline-flex items-center justify-center rounded-full px-8 py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-emerald-500 to-teal-500 shadow-lg transition-all duration-200 hover:from-emerald-400 hover:to-teal-400 hover:shadow-emerald-400/30">
               Start for Free
             </a>
             <a href="#testimonials" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-8 py-3.5 text-sm font-medium text-white/90 hover:bg-white/10 hover:border-white/25 transition-all">
@@ -140,17 +117,17 @@
         <!-- Hero visual / product preview area -->
         <div class="mt-20 lg:mt-28 relative">
           <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent z-10 pointer-events-none"></div>
-          <div class="relative rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm p-1 shadow-2xl shadow-purple-500/5">
+          <div class="relative rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm p-1 shadow-2xl shadow-emerald-500/10">
             <div class="flex items-center gap-2 px-4 py-3 border-b border-white/5">
-              <span class="h-2.5 w-2.5 rounded-full bg-purple-500/80"></span>
-              <span class="h-2.5 w-2.5 rounded-full bg-violet-500/60"></span>
-              <span class="h-2.5 w-2.5 rounded-full bg-fuchsia-500/60"></span>
-              <span class="ml-4 text-xs text-slate-500 font-medium">Zenith AI • Workspace</span>
+              <span class="h-2.5 w-2.5 rounded-full bg-emerald-500/80"></span>
+              <span class="h-2.5 w-2.5 rounded-full bg-teal-500/60"></span>
+              <span class="h-2.5 w-2.5 rounded-full bg-emerald-400/60"></span>
+              <span class="ml-4 text-xs text-slate-500 font-medium">NexusLegal • Workspace</span>
             </div>
             <div class="aspect-video rounded-b-xl bg-gradient-to-br from-white/[0.04] to-transparent flex items-center justify-center min-h-[280px]">
               <div class="flex flex-col items-center gap-4 text-slate-500">
                 <div class="h-12 w-12 rounded-xl border border-white/10 flex items-center justify-center">
-                  <svg class="w-6 h-6 text-purple-500/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-6 h-6 text-emerald-500/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                   </svg>
                 </div>
@@ -162,57 +139,57 @@
       </section>
     </main>
     <!-- INSERT_YOUR_CODE -->
-    <section id="features" class="w-full px-4 py-20" style="background: var(--zenith-bg);">
+    <section id="features" class="w-full px-4 py-20" style="background: var(--nexuslegal-bg);">
       <div class="mx-auto max-w-6xl">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12 drop-shadow-[0_0_18px_rgba(168,85,247,0.45)]">
-          Why choose <span class="text-purple-400">Zenith AI?</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12 drop-shadow-[0_0_18px_rgba(16,185,129,0.45)]">
+          Why choose <span class="text-emerald-400">NexusLegal?</span>
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Feature 1 -->
           <div class="flex flex-col items-center text-center rounded-2xl border border-white/15 bg-white/[0.08] backdrop-blur-md p-8 shadow-lg transition
-                      hover:-translate-y-2 hover:shadow-[0_0_36px_4px_rgba(168,85,247,0.45)] duration-200 group">
+                      hover:-translate-y-2 hover:shadow-[0_0_36px_4px_rgba(16,185,129,0.35)] duration-200 group">
             <div class="mb-5">
               <!-- Smart Automation Icon -->
-              <svg class="w-12 h-12 text-purple-400 mx-auto drop-shadow-[0_0_8px_rgba(168,85,247,0.55)]" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 28 28">
+              <svg class="w-12 h-12 text-emerald-400 mx-auto drop-shadow-[0_0_8px_rgba(16,185,129,0.55)]" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 28 28">
                 <rect x="3.5" y="3.5" width="21" height="21" rx="6" stroke="currentColor" />
                 <path d="M14 8v6l4 2" stroke="currentColor"/>
               </svg>
             </div>
-            <h3 class="text-lg font-semibold text-white mb-2">Smart Automation</h3>
-            <p class="text-slate-400">Automate repetitive tasks intelligently to boost productivity and focus on what matters most.</p>
+            <h3 class="text-lg font-semibold text-white mb-2">AI-Powered Automation</h3>
+            <p class="text-slate-400">Automate repetitive legal review tasks to boost efficiency and focus on client strategy.</p>
           </div>
 
           <!-- Feature 2 -->
           <div class="flex flex-col items-center text-center rounded-2xl border border-white/15 bg-white/[0.08] backdrop-blur-md p-8 shadow-lg transition
-                      hover:-translate-y-2 hover:shadow-[0_0_36px_4px_rgba(168,85,247,0.45)] duration-200 group">
+                      hover:-translate-y-2 hover:shadow-[0_0_36px_4px_rgba(16,185,129,0.35)] duration-200 group">
             <div class="mb-5">
               <!-- Real-time Analytics Icon -->
-              <svg class="w-12 h-12 text-purple-400 mx-auto drop-shadow-[0_0_8px_rgba(168,85,247,0.55)]" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 28 28">
+              <svg class="w-12 h-12 text-emerald-400 mx-auto drop-shadow-[0_0_8px_rgba(16,185,129,0.55)]" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 28 28">
                 <rect x="4" y="4" width="20" height="16" rx="4" stroke="currentColor"/>
                 <path d="M10.5 16V13M14 16V11M17.5 16V15M7 20h14" stroke="currentColor"/>
               </svg>
             </div>
             <h3 class="text-lg font-semibold text-white mb-2">Real-time Analytics</h3>
-            <p class="text-slate-400">Stay informed with instant insights and actionable data at your fingertips, updated in real time.</p>
+            <p class="text-slate-400">Get instant legal insights, document status, and analytics at your fingertips—always up to date.</p>
           </div>
 
           <!-- Feature 3 -->
           <div class="flex flex-col items-center text-center rounded-2xl border border-white/15 bg-white/[0.08] backdrop-blur-md p-8 shadow-lg transition
-                      hover:-translate-y-2 hover:shadow-[0_0_36px_4px_rgba(168,85,247,0.45)] duration-200 group">
+                      hover:-translate-y-2 hover:shadow-[0_0_36px_4px_rgba(16,185,129,0.35)] duration-200 group">
             <div class="mb-5">
               <!-- Seamless Integration Icon -->
-              <svg class="w-12 h-12 text-purple-400 mx-auto drop-shadow-[0_0_8px_rgba(168,85,247,0.55)]" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 28 28">
+              <svg class="w-12 h-12 text-emerald-400 mx-auto drop-shadow-[0_0_8px_rgba(16,185,129,0.55)]" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 28 28">
                 <path d="M21.5 16.5v3A2.5 2.5 0 0 1 19 22h-10a2.5 2.5 0 0 1-2.5-2.5v-3M14 18V10M18 14l-4-4-4 4" stroke="currentColor"/>
                 <rect x="7" y="4" width="14" height="6" rx="3" stroke="currentColor"/>
               </svg>
             </div>
             <h3 class="text-lg font-semibold text-white mb-2">Seamless Integration</h3>
-            <p class="text-slate-400">Connect effortlessly with your favorite tools and platforms—no complex setup required.</p>
+            <p class="text-slate-400">Connect easily with your favorite legal tools and platforms—minimal setup required.</p>
           </div>
         </div>
       </div>
     </section>
-    <section id="testimonials" class="w-full px-4 py-20" style="background: var(--zenith-bg);">
+    <section id="testimonials" class="w-full px-4 py-20" style="background: var(--nexuslegal-bg);">
       <div class="mx-auto max-w-4xl">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white drop-shadow-[0_0_20px_rgba(16,185,129,0.55)]" style="text-shadow: 0 0 16px #06d6a0;">
           Trusted by Top Law Firms
@@ -256,7 +233,7 @@
         </div>
       </div>
     </section>
-    <section id="pricing" class="w-full px-4 py-20" style="background: var(--zenith-bg);">
+    <section id="pricing" class="w-full px-4 py-20" style="background: var(--nexuslegal-bg);">
       <div class="mx-auto max-w-6xl">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white drop-shadow-[0_0_20px_rgba(16,185,129,0.65)]" style="text-shadow: 0 0 16px #06d6a0;">
           Simple, <span class="text-emerald-400">Transparent</span> Pricing
@@ -284,7 +261,7 @@
                 Secure, Encrypted Storage
               </li>
             </ul>
-            <a href="register.html" class="w-full btn-gradient rounded-xl py-3 px-6 font-semibold text-white shadow-md transition hover:-translate-y-1 hover:shadow-lg block text-center">
+            <a href="register.html" class="w-full rounded-xl py-3 px-6 font-semibold text-white bg-gradient-to-r from-emerald-500 to-teal-500 shadow-md transition hover:-translate-y-1 hover:shadow-emerald-400/30 block text-center">
               Get Started
             </a>
           </div>
@@ -320,7 +297,7 @@
                 Live Chat Support
               </li>
             </ul>
-            <a href="register.html" class="w-full btn-gradient rounded-xl py-3 px-6 font-semibold text-white shadow-md transition hover:-translate-y-1 hover:shadow-lg block text-center">
+            <a href="register.html" class="w-full rounded-xl py-3 px-6 font-semibold text-white bg-gradient-to-r from-emerald-500 to-teal-500 shadow-md transition hover:-translate-y-1 hover:shadow-emerald-400/30 block text-center">
               Get Started
             </a>
           </div>
@@ -351,7 +328,7 @@
                 24/7 Priority Support
               </li>
             </ul>
-            <a href="register.html" class="w-full btn-gradient rounded-xl py-3 px-6 font-semibold text-white shadow-md transition hover:-translate-y-1 hover:shadow-lg block text-center">
+            <a href="register.html" class="w-full rounded-xl py-3 px-6 font-semibold text-white bg-gradient-to-r from-emerald-500 to-teal-500 shadow-md transition hover:-translate-y-1 hover:shadow-emerald-400/30 block text-center">
               Contact Sales
             </a>
           </div>
@@ -382,7 +359,7 @@
                 <a href="#pricing" class="text-gray-400 text-sm hover:text-emerald-400 transition">Pricing</a>
               </li>
               <li>
-                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Integrations</a>
+                <a href="integrations.html" class="text-gray-400 text-sm hover:text-emerald-400 transition">Integrations</a>
               </li>
               <li>
                 <a href="#testimonials" class="text-gray-400 text-sm hover:text-emerald-400 transition">Demo</a>
@@ -394,16 +371,16 @@
             <h4 class="text-white font-semibold mb-3 text-sm tracking-wide">Company</h4>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">About</a>
+                <a href="about.html" class="text-gray-400 text-sm hover:text-emerald-400 transition">About</a>
               </li>
               <li>
-                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Careers</a>
+                <a href="careers.html" class="text-gray-400 text-sm hover:text-emerald-400 transition">Careers</a>
               </li>
               <li>
-                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Blog</a>
+                <a href="blog.html" class="text-gray-400 text-sm hover:text-emerald-400 transition">Blog</a>
               </li>
               <li>
-                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Contact</a>
+                <a href="contact.html" class="text-gray-400 text-sm hover:text-emerald-400 transition">Contact</a>
               </li>
             </ul>
           </div>
@@ -412,13 +389,13 @@
             <h4 class="text-white font-semibold mb-3 text-sm tracking-wide">Legal</h4>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Privacy Policy</a>
+                <a href="privacy.html" class="text-gray-400 text-sm hover:text-emerald-400 transition">Privacy Policy</a>
               </li>
               <li>
-                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Terms of Service</a>
+                <a href="terms.html" class="text-gray-400 text-sm hover:text-emerald-400 transition">Terms of Service</a>
               </li>
               <li>
-                <a href="#" class="text-gray-400 text-sm hover:text-emerald-400 transition">Compliance</a>
+                <a href="compliance.html" class="text-gray-400 text-sm hover:text-emerald-400 transition">Compliance</a>
               </li>
             </ul>
           </div>

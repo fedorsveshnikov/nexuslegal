@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — NexusLegal</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --nexuslegal-bg: #0a0a0a;
+    }
+    body { background: var(--nexuslegal-bg); }
+    /* Glassmorphism card style */
+    .glass-card {
+      background: rgba(17, 24, 39, 0.35);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col text-slate-100 antialiased">
+  <!-- Emerald/Teal ambient background glow -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <div class="absolute bg-emerald-500/40 -top-40 -right-40 w-96 h-96 rounded-full blur-3xl opacity-30"></div>
+    <div class="absolute bg-teal-500/30 top-1/2 -left-32 w-80 h-80 rounded-full blur-3xl opacity-30"></div>
+  </div>
+
+  <main class="flex flex-1 justify-center items-center pt-20 pb-10 px-4">
+    <div class="w-full max-w-3xl flex flex-col items-center">
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-center mb-8 bg-gradient-to-r from-emerald-400 via-emerald-500 to-emerald-300 bg-clip-text text-transparent drop-shadow-emerald-500/60">
+        Our Mission
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg text-center max-w-2xl mb-14">
+        NexusLegal is dedicated to revolutionizing the legal industry by empowering law firms with cutting-edge AI tools. Our mission is to streamline legal workflows and dramatically reduce the time professionals spend on document review and analysis, enabling lawyers to focus on what matters most: their clients and critical legal work.
+      </p>
+      <h2 class="text-2xl font-semibold text-center mb-7 text-emerald-300/90">
+        Leadership Team
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full mb-14">
+        <!-- CEO Card -->
+        <div class="glass-card rounded-xl py-8 px-6 flex flex-col items-center shadow-lg transition hover:shadow-emerald-400/30">
+          <div class="h-12 w-12 rounded-full bg-emerald-500/70 flex items-center justify-center text-2xl font-bold text-white mb-3">
+            CEO
+          </div>
+          <span class="text-lg font-semibold mb-1 text-emerald-300">Jane Doe</span>
+          <span class="text-slate-400 text-sm">Chief Executive Officer</span>
+        </div>
+        <!-- CTO Card -->
+        <div class="glass-card rounded-xl py-8 px-6 flex flex-col items-center shadow-lg transition hover:shadow-emerald-400/30">
+          <div class="h-12 w-12 rounded-full bg-emerald-400/80 flex items-center justify-center text-2xl font-bold text-white mb-3">
+            CTO
+          </div>
+          <span class="text-lg font-semibold mb-1 text-emerald-300">John Smith</span>
+          <span class="text-slate-400 text-sm">Chief Technology Officer</span>
+        </div>
+      </div>
+      <a href="index.html" class="text-emerald-300/80 text-sm hover:underline hover:text-emerald-200 transition flex items-center gap-1">
+        <svg class="inline w-4 h-4 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Back to Home
+      </a>
+    </div>
+  </main>
+</body>
+</html>

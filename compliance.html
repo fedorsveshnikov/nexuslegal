@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexusLegal — Compliance &amp; Security</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --nexuslegal-bg: #0a0a0a;
+    }
+    body { background: var(--nexuslegal-bg); }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col text-slate-100 antialiased">
+  <!-- Emerald/Teal ambient background glow -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <div class="absolute bg-emerald-500/40 -top-40 -right-40 w-96 h-96 rounded-full blur-3xl opacity-30"></div>
+    <div class="absolute bg-teal-500/30 top-1/2 -left-32 w-80 h-80 rounded-full blur-3xl opacity-30"></div>
+  </div>
+  <main class="flex flex-1 justify-center items-center pt-16 pb-10 px-4">
+    <div class="bg-white/5 backdrop-blur-lg rounded-2xl shadow-lg border border-white/10 w-full max-w-2xl flex flex-col items-center px-8 py-10">
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-center mb-7 bg-gradient-to-r from-emerald-400 via-emerald-500 to-emerald-300 bg-clip-text text-transparent drop-shadow-emerald-500/70">
+        Compliance &amp; Security
+      </h1>
+      <p class="text-slate-300 text-base text-center mb-7">
+        Last updated: June 2024
+      </p>
+      <div class="w-full text-slate-200 text-base leading-relaxed space-y-7 mb-8">
+        <h2 class="text-lg font-semibold text-emerald-300 mt-6 mb-2">SOC 2 Compliance</h2>
+        <p>
+          NexusLegal is committed to maintaining the highest standards of security and confidentiality for all customer data. We adhere to SOC 2 principles, ensuring our systems and processes are regularly audited for security, availability, processing integrity, confidentiality, and privacy.
+        </p>
+        <h2 class="text-lg font-semibold text-emerald-300 mt-6 mb-2">GDPR Commitment</h2>
+        <p>
+          We respect your right to data privacy and comply with the General Data Protection Regulation (GDPR). NexusLegal implements strict data protection measures and provides clear processes for accessing, correcting, or deleting your personal data.
+        </p>
+        <p>
+          For any compliance or security-related questions, please contact us at <a href="mailto:compliance@nexuslegal.com" class="text-emerald-300 hover:underline">compliance@nexuslegal.com</a>.
+        </p>
+      </div>
+      <a href="index.html" class="text-emerald-300/80 text-sm hover:underline hover:text-emerald-200 transition flex items-center gap-1">
+        <svg class="inline w-4 h-4 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Back to Home
+      </a>
+    </div>
+  </main>
+</body>
+</html>
